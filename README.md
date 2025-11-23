@@ -23,10 +23,36 @@ __Algorithm__:
 4. Generate Carrier Signal: Define the carrier signal as a cosine wave. 
 5. Modulate Signal: Apply the AM formula to obtain the modulated signal. 
 6. Plot the Signals: Use Matplotlib to plot the message signal, carrier signal, and modulated signal.
-
+   
+__Program__:
+```
+import numpy as np
+import matplotlib.pyplot as plt
+Am = 7
+fm = 5
+Ac = 14
+fc = 500
+fs = 5000
+t = np.arange(0, 3/fm, 1/fs)
+m = Am * np.cos(2 * np.pi * fm * t)
+c = Ac * np.cos(2 * np.pi * fc * t)
+s = (Ac + m) * np.cos(2 * np.pi * fc * t)
+plt.subplot(3, 1, 1)
+plt.plot(t, m)
+plt.subplot(3, 1, 2)
+plt.plot(t, c)
+plt.subplot(3, 1, 3)
+plt.plot(t, s)
+plt.tight_layout()
+plt.show()
+```
  __Output__:
+ 
+<img width="845" height="589" alt="image" src="https://github.com/user-attachments/assets/9e06b39b-24e8-47d9-8694-7eeeef5645be" />
 
 
  __Result__:
+ 
+ The message signal, carrier signal, and amplitude modulated (AM) signal will be displayed in separate plots. Thus, AM is implemented using numPy and Matplotlib.
 
 
