@@ -46,6 +46,11 @@ plt.plot(t, s)
 plt.tight_layout()
 plt.show()
 ```
+
+__Tabulation__
+
+<img width="1205" height="938" alt="image" src="https://github.com/user-attachments/assets/83bec1af-a8ab-4fbf-adab-1a009d1fe3a6" />
+
  __Output__:
  
 <img width="845" height="589" alt="image" src="https://github.com/user-attachments/assets/9e06b39b-24e8-47d9-8694-7eeeef5645be" />
